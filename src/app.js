@@ -1,13 +1,17 @@
 const express = require('express');
 const dotenv = require('dotenv');
-const conectionDB = require('./config/database.js'); 
 
-const bookRoutes = require('./routes/book.js');
+const conectionDB = require('./config/database.js'); 
+const bookRoutes = require('./routes/bookRoute.js');
 
 const app = express();
 
 dotenv.config(); // dotenv to set environment variables
 conectionDB();
+
+// CORS
+// Configurar cabeceras y cors
+
 
 // Middleware
 app.use(express.json());

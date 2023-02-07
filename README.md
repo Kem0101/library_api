@@ -3,8 +3,19 @@
 - [Instrucciones en Español](README_ES.md)
 - [Instructions in English](README_EN.md)
 
-no documentation for the configuration
+### General info
 
-generateData method(seeder)
-the method let me generate data and post it to the database if it want to, but for data structure reason i prefer add some example records to test the methods of visualize the books from the database
-this method is off
+El archivo seeder.js es mas que nada un ejemplo si quisieramos popular la base de datos local a partir
+del JSON Books en la carpeta data, solo tendriamos que al crear el proyecto de inicio usar el seeder como archivo principal
+(app) desde este requerir nuestro modelo, hacer la conexión a la base de datos y luego leer el JSON
+crear una función que genere dicho modelo y guarde los datos.
+
+npm run seed
+
+NOTA:
+Los métodos de listar libros y ver los libros por página y formato deseado fueron testeados consumiendo datos de una base de datos en mongodb cloud
+
+### Setup
+
+npm install
+npm start
